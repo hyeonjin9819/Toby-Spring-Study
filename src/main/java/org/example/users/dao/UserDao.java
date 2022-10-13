@@ -1,0 +1,24 @@
+package org.example.users.dao;
+
+import org.example.users.entity.User;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public class UserDao {
+    private ConnectionMaker connectionMaker;
+
+    public UserDao(){
+        connectionMaker = new DConectionMaker();
+    }
+
+    public void add(User user) throws ClassNotFoundException, SQLException{
+        Connection c = connectionMaker.makeConnection();
+        // ...
+    }
+
+    public User get(String id) throws ClassNotFoundException, SQLException{
+        Connection c = connectionMaker.makeConnection();
+        // ...
+    }
+}
