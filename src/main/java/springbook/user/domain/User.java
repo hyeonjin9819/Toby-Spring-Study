@@ -1,4 +1,4 @@
-package org.example.users.entity;
+package springbook.user.domain;
 
 public class User {
     String id;
